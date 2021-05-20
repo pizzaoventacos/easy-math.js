@@ -14,4 +14,4 @@ console.log(math.div([1, 2, 3])) //divides the first 2 parameters(1 and 2), and 
 console.log(math.multi('1, 2, 3, 4, 5')) //multiplies all parameters together, this returns 120.
 console.log(math.pow('10, 2, 4')) //treated as parentheses; raises 1st param ^ 2nd param(10^2), and then raises the answer to the next param and repeats until there are no more parameters to loop through.
 ```
-(Example)[https://replit.com/@PizzaOvenTacos/Randomizer-Package]
+[Example](https://replit.com/@PizzaOvenTacos/Randomizer-Package)
