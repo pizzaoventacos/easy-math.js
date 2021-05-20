@@ -3,7 +3,7 @@ A javascript package that makes doing math operations very easy and simple
 # How to Use: 
 >npm install easy-math.js
 >>both: [n1, n2, n3] and 'n1, n2, n3' (array and string) are supported as parameters.
->>>Global Rules: The operation is performed upon the first parameter and 0, and then between the answer of that and the next parameter, effectively like using parenthesis, so for certain operations, like power, order matters tremendously.
+>>>Global Rules: The operation is performed upon the first parameter and 0, or 1(multiplication and other operations like it, because if it was 0, it would always return 0(0 x anything = 0)), and then between the answer of that and the next parameter, effectively like using parenthesis, so for certain operations, like power, order matters tremendously.
 ## Example
 ```
 const math = require('ez-math.js'); //importing the package
