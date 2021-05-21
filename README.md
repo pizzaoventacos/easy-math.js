@@ -12,7 +12,7 @@ console.log(math.add('1, 2, 3, 4')); //returns 10
 
 console.log(math.add([1, 2, 3 , 4])); //also returns 10
 
-console.log(math.subtr([1, 2, 3, 4])) //subtracts all parameters from 0, this returns -10
+console.log(math.subtr([1, 2, 3, 4])) //same as: ((1 - 2) - 3) - 4 - returns 8; subtracts (n1 - n2) = x, then subtracts x - n3, or, in this case, x - 3 = y, then subtracts y - n4, or y - 4, and returns when there are no more to loop through
 
 console.log(math.div([1, 2, 3])) //divides the first 2 parameters(1 and 2), and gets 0.5; divides that by next param and returns what it has when there are no more params to loop through. this returns 0.1666...
 
