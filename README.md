@@ -8,7 +8,6 @@ A javascript package that makes doing math operations very easy and simple
 ```
 const math = require('ez-math.js'); //importing the package
 
-
 console.log(math.add('1, 2, 3, 4')); //returns 10
 
 console.log(math.add([1, 2, 3 , 4])); //also returns 10
@@ -21,4 +20,35 @@ console.log(math.multi('1, 2, 3, 4, 5')) //multiplies all parameters together, t
 
 console.log(math.pow('10, 2, 4')) //treated as parentheses; raises 1st param ^ 2nd param(10^2), and then raises the answer to the next param and repeats until there are no more parameters to loop through.
 ```
+# Methods: 
+> ## __add__ _- adds all of the numbers specified_
+>>Parameters - array(required)
+>>>type: string or array
+
+>example: math.add([1, 2, 3, 4]) OR math.add('1, 2, 3 ,4') 1 STRING, the commas are inside the string, not representing new strings.
+
+> ## __subtr__ - _subtracts all of the numbers specified in the same order_
+>>Parameters - array(required)
+>>>type: string or array
+
+>example: math.subtr([1, 2, 3, 4]) - returns -8 (executes [(1-2)-3]-4)
+
+> ## __multi__ - _multiplies all numbers specified_
+>>Parameters - array(required)
+>>>type: string or array
+
+>example: math.multi([1, 2, 3, 4]) returns 24 (executes [(1 * 2) * 3] * 4)
+
+> ## __div__ - _divides all numbers specified in the same order_
+>>Parameters - array(required)
+>>>type: string or array
+
+>example: math.div([1, 2, 3, 4]) - returns 0.041666666666666664 (executes [(1 / 2) / 3] / 4)
+
+> ## __pow__ - _raises array[0] to array[1] and raises that to the next parameter. - continues until there is nothing else to loop through(see example for better understanding)_
+>>Parameters - array(required)
+>>>type: string or array
+
+>example: math.pow([5, 2, 3]) - returns 15625 (executes [5 ^ 2] ^ 3)(the same as: math.pow([5, math.multi([2, 3])])), which multiplies 2 and 3, getting 6, and raises 5 to that(5^6)
+
 [Example](https://replit.com/@PizzaOvenTacos/Randomizer-Package)
